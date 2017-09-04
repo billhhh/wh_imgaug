@@ -52,32 +52,39 @@ for filename in os.listdir(src_dir):
 lst = class_names
 imgs = []
 imgpath = []
-for ind in range(0,len(lst)):
-    sblst=os.listdir(os.path.join(src_dir,lst[ind]))
-    # shuffle(sblst)
-    print("processing "+lst[ind]+"...")
-    print(len(sblst))
 
-    # skip the dir already big enough
-    if len(sblst)>1000:
-        continue
+try:
+    for ind in range(0,len(lst)):
+        sblst=os.listdir(os.path.join(src_dir,lst[ind]))
+        # shuffle(sblst)
+        print("processing "+lst[ind]+"...")
+        print(len(sblst))
 
-    for pic_name in sblst:
-        filepath_src= src_dir + '/' + lst[ind] + '/' + pic_name
-        imgpath.append(src_dir + '/' + lst[ind] + '/'+ 'aug'+pic_name)
-        if pic_name.endswith('.db') == True:
+        # skip the dir already big enough
+        if len(sblst)>1000:
             continue
-        else:
-            # 'images' should be either a 4D numpy array of shape (N, height, width, channels)
-            # or a list of 3D numpy arrays, each having shape (height, width, channels).
-            # Grayscale images must have shape (height, width, 1) each.
-            # All images must have numpy's dtype uint8. Values are expected to be in
-            # range 0-255.
-            img = plt.imread(filepath_src)
-            imgs.append(img)
 
-images_aug = seq.augment_images(imgs)
+        for pic_name in sblst:
+            filepath_src= src_dir + '/' + lst[ind] + '/' + pic_name
+            imgpath.append(src_dir + '/' + lst[ind] + '/'+ 'aug'+pic_name)
+            if pic_name.endswith('.db') == True:
+                continue
+            else:
+                # 'images' should be either a 4D numpy array of shape (N, height, width, channels)
+                # or a list of 3D numpy arrays, each having shape (height, width, channels).
+                # Grayscale images must have shape (height, width, 1) each.
+                # All images must have numpy's dtype uint8. Values are expected to be in
+                # range 0-255.
+                img = plt.imread(filepath_src)
+                imgs.append(img)
 
-for i in range(0,len(imgs)):
-    # plt.imshow(images_aug[i])
-    plt.imsave(imgpath[i],images_aug[i])
+    images_aug = seq.augment_images(imgs)
+
+    for i in range(0,len(imgs)):
+        # plt.imshow(images_aug[i])
+        plt.imsave(imgpath[i],images_aug[i])
+
+except(IOError ,ZeroDivisionError),e:
+    print e
+
+print "done!"
