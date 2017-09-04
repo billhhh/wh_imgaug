@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026f65e2-f87c-47a4-9103-b4535303cef3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/820749407373755479_263362048.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_80.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_81.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_82.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_83.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_84.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_85.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_86.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_87.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple/apple_88.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/126373488579426538_12899973.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/153771722701524401_6812034.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/174551453_902705.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/219035782966244844_2179956.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/226526854668180314_756365.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/228499403873075775_73983.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/228578955056387514_6059356.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/231024932_1775927.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/231351337845457159_6991471.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/banana/320131861_1189047.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/125815986_1213438.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/138273488_1447873.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/211113881158746948_3711983.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/225678526755219131_14277920.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/230644523047623969_47342.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/239447620389739537_47342.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/244047325320445439_49696790.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/245918095265991083_44272785.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/247431304065698342_2327417.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cherries/29862263_2110335.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgaug_basic_testaug.py" afterPath="$PROJECT_DIR$/imgaug_basic_testaug.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgaug_batch.py" afterPath="$PROJECT_DIR$/imgaug_batch.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +15,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wh_imgaug$wh_imgaug.coverage" NAME="wh_imgaug Coverage Results" MODIFIED="1504497375370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_basic2.coverage" NAME="imgaug_basic2 Coverage Results" MODIFIED="1504501065885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_basic_testaug.coverage" NAME="imgaug_basic_testaug Coverage Results" MODIFIED="1504502902924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_batch.coverage" NAME="imgaug_batch Coverage Results" MODIFIED="1504514300567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wh_imgaug$split_train_val.coverage" NAME="split_train_val Coverage Results" MODIFIED="1504514552424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_batch.coverage" NAME="imgaug_batch Coverage Results" MODIFIED="1504516894297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_basic_testaug.coverage" NAME="imgaug_basic_testaug Coverage Results" MODIFIED="1504517094226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_basic.coverage" NAME="imgaug_basic Coverage Results" MODIFIED="1504500964135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -53,22 +25,10 @@
       <file leaf-file-name="imgaug_batch.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imgaug_batch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="split_train_val.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/split_train_val.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,8 +45,8 @@
         <option value="$PROJECT_DIR$/wh_imgaug.py" />
         <option value="$PROJECT_DIR$/imgaug_basic.py" />
         <option value="$PROJECT_DIR$/imgaug_basic2.py" />
-        <option value="$PROJECT_DIR$/imgaug_basic_testaug.py" />
         <option value="$PROJECT_DIR$/imgaug_batch.py" />
+        <option value="$PROJECT_DIR$/imgaug_basic_testaug.py" />
       </list>
     </option>
   </component>
@@ -148,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.imgaug_batch">
+  <component name="RunManager" selected="Python.imgaug_basic_testaug">
     <configuration name="imgaug_basic" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,7 +181,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="wh_imgaug" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="split_train_val" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -234,25 +194,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="wh_imgaug" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wh_imgaug.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/split_train_val.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.wh_imgaug" />
-      <item index="1" class="java.lang.String" itemvalue="Python.imgaug_basic2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.imgaug_basic" />
-      <item index="3" class="java.lang.String" itemvalue="Python.imgaug_basic_testaug" />
-      <item index="4" class="java.lang.String" itemvalue="Python.imgaug_batch" />
+      <item index="0" class="java.lang.String" itemvalue="Python.imgaug_basic2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.imgaug_basic" />
+      <item index="2" class="java.lang.String" itemvalue="Python.imgaug_basic_testaug" />
+      <item index="3" class="java.lang.String" itemvalue="Python.imgaug_batch" />
+      <item index="4" class="java.lang.String" itemvalue="Python.split_train_val" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.imgaug_batch" />
-        <item index="1" class="java.lang.String" itemvalue="Python.imgaug_basic_testaug" />
-        <item index="2" class="java.lang.String" itemvalue="Python.imgaug_basic2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.imgaug_basic" />
-        <item index="4" class="java.lang.String" itemvalue="Python.wh_imgaug" />
+        <item index="0" class="java.lang.String" itemvalue="Python.imgaug_basic_testaug" />
+        <item index="1" class="java.lang.String" itemvalue="Python.imgaug_batch" />
+        <item index="2" class="java.lang.String" itemvalue="Python.split_train_val" />
+        <item index="3" class="java.lang.String" itemvalue="Python.imgaug_basic2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.imgaug_basic" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +244,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3843844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -302,7 +262,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -312,7 +272,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#36#0" expanded="false" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -330,14 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program_Files/Continuum/Anaconda2/Lib/site-packages/imgaug/augmenters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="234" column="8" lean-forward="false" selection-start-line="234" selection-start-column="8" selection-end-line="234" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imgaug_basic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -352,30 +304,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imgaug_basic_testaug.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#36#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/split_train_val.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="365">
+          <caret line="46" column="70" lean-forward="true" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="70" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Program_Files/Continuum/Anaconda2/Lib/site-packages/imgaug/augmenters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="277" column="0" lean-forward="false" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgaug_basic_testaug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imgaug_batch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

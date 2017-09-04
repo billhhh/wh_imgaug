@@ -1,13 +1,13 @@
 from imgaug import augmenters as iaa
 from PIL import Image
 from numpy import *
+import numpy as ny
 import os
 import os.path
 from shutil import copyfile
 from math import floor
 from random import shuffle
-
-src_dir = './newFood_724_clean'
+import matplotlib.pylab as plt
 
 seq = iaa.Sequential([
     # iaa.Crop(px=(0, 16)), # crop images from each side by 0 to 16px (randomly chosen)
@@ -30,10 +30,39 @@ seq = iaa.Sequential([
     ),
 ])
 
-pil_img =Image.open('apple/apple_86.jpg')
-pil_img.show()
-img = array(pil_img)
-images_aug = seq.augment_image(img)
+src_dir = './newFood_724_clean'
+
+class_names = []
+for filename in os.listdir(src_dir):
+    path = os.path.join(src_dir, filename)
+    if os.path.isdir(path):
+        class_names.append(filename)
+
+lst = class_names
+
+imgs = []
+for ind in range(0,len(lst)):
+    sblst=os.listdir(os.path.join(src_dir,lst[ind]))
+    # shuffle(sblst)
+    print(len(sblst))
+    cnt=0
+    for pic_name in sblst:
+        filepath_src= src_dir + '/' + lst[ind] + '/' + pic_name
+        if pic_name.endswith('.db') == True:
+            continue
+        else:
+            #transfer into numpy array here
+            # 'images' should be either a 4D numpy array of shape (N, height, width, channels)
+            # or a list of 3D numpy arrays, each having shape (height, width, channels).
+            # Grayscale images must have shape (height, width, 1) each.
+            # All images must have numpy's dtype uint8. Values are expected to be in
+            # range 0-255.
+            cnt += 1
+            img = plt.imread(filepath_src)
+            imgs.append(img)
+
+imgs = ny.array(imgs)
+size = ny.size(imgs)
+images_aug = seq.augment_images(imgs)
 pil_im2 = Image.fromarray(uint8(images_aug))
-# pil_im2 = Image.fromarray(images_aug)
 pil_im2.show()
