@@ -56,6 +56,11 @@ for ind in range(0,len(lst)):
     sblst=os.listdir(os.path.join(src_dir,lst[ind]))
     # shuffle(sblst)
     print(len(sblst))
+
+    # skip the dir already big enough
+    if len(sblst)>1000:
+        continue
+
     for pic_name in sblst:
         filepath_src= src_dir + '/' + lst[ind] + '/' + pic_name
         imgpath.append(src_dir + '/' + lst[ind] + '/'+ 'aug'+pic_name)
