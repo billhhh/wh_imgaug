@@ -78,7 +78,7 @@ for ind in range(0,len(lst)):
                 img = plt.imread(filepath_src)
                 imgs.append(img)
                 imgpath.append(src_dir + '/' + lst[ind] + '/' + 'aug' + pic_name)
-        except(IOError, ZeroDivisionError), e:
+        except(IOError), e:
             print e
             continue
 
