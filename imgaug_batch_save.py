@@ -62,6 +62,7 @@ try:
 
         # skip the dir already big enough
         if len(sblst)>1000:
+            print "continue!"
             continue
 
         for pic_name in sblst:
