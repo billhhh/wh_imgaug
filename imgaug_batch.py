@@ -10,25 +10,37 @@ from random import shuffle
 import matplotlib.pylab as plt
 
 seq = iaa.Sequential([
-    # iaa.Crop(px=(0, 16)), # crop images from each side by 0 to 16px (randomly chosen)
-    # iaa.Flipud(0.5), #Flip 50% of all images vertically:
-    # iaa.Fliplr(0.5), # horizontally flip 50% of the images
-    iaa.GaussianBlur(sigma=(0, 3.0)), # blur images with a sigma of 0 to 3.0
-    # iaa.Crop(percent=(0, 0.1)),  # random crops
-    # iaa.ContrastNormalization((0.75, 1.5)), # Strengthen or weaken the contrast in each image.
-    # iaa.AdditiveGaussianNoise(loc=0, scale=(0.0, 0.05*255), per_channel=0.5), # Add gaussian noise.
-    # iaa.Multiply((0.8, 1.2), per_channel=0.2), # Make some images brighter and some darker.
-    # iaa.Affine(translate_px={"x":-40}), # Augmenter to apply affine transformations to images.
-    # iaa.AdditiveGaussianNoise(scale=0.1*255),
-    # iaa.Scale({"height": 32, "width": 64})
-    # iaa.Scale({"height": 128, "width": "keep-aspect-ratio"}),
-    # iaa.Scale((0.5, 0.6)),
-    # iaa.Scale({"height": (0.5, 0.75), "width": [64,128]}),
-    # iaa.CropAndPad(percent=(-0.25, 0.25)),
-    # iaa.Sometimes(0.5,
-    #    iaa.Scale({"height": 128, "width": "keep-aspect-ratio"}),
-    # ),
-])
+    iaa.Sometimes(0.5,
+        iaa.Crop(px=(0, 16)),  # crop images from each side by 0 to 16px (randomly chosen)
+    ),
+    iaa.Sometimes(0.5,
+        iaa.Crop(percent=(0, 0.1)),  # random crops
+    ),
+    iaa.Flipud(0.5), #Flip 50% of all images vertically:
+    iaa.Fliplr(0.5), # horizontally flip 50% of the images
+    iaa.Sometimes(0.5,
+        iaa.GaussianBlur(sigma=(0, 3.0)),  # blur images with a sigma of 0 to 3.0
+    ),
+    iaa.Sometimes(0.5,
+        iaa.ContrastNormalization((0.75, 1.5)),  # Strengthen or weaken the contrast in each image.
+    ),
+    iaa.Sometimes(0.5,
+        iaa.AdditiveGaussianNoise(loc=0, scale=(0.0, 0.05 * 255), per_channel=0.5),  # Add gaussian noise.
+    ),
+    iaa.Sometimes(0.5,
+        iaa.Multiply((0.8, 1.2), per_channel=0.2), # Make some images brighter and some darker.
+    ),
+    iaa.Sometimes(0.5,
+        iaa.Affine(translate_px={"x":-40}), # Augmenter to apply affine transformations to images.
+    ),
+    iaa.AdditiveGaussianNoise(scale=0.1*255),
+    iaa.Sometimes(0.4,
+        iaa.Affine(translate_px={"x":-40}), # Augmenter to apply affine transformations to images.
+    ),
+    iaa.Sometimes(0.5,
+        iaa.Scale({"height": 512, "width": 512})
+    ),
+], random_order=True) # apply augmenters in random order
 
 src_dir = './newFood_724_clean'
 class_names = []
