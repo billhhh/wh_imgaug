@@ -9,14 +9,18 @@ seq = iaa.Sequential([
     # iaa.Flipud(0.5), #Flip 50% of all images vertically:
     # iaa.Crop(percent=(0, 0.1)),  # random crops
     # iaa.ContrastNormalization((0.75, 1.5)), # Strengthen or weaken the contrast in each image.
-    # iaa.AdditiveGaussianNoise(loc=0, scale=(0.0, 0.05*255), per_channel=0.5),
-    # iaa.Multiply((0.8, 1.2), per_channel=0.2),
-    # iaa.Affine(translate_px={"x":-40}),
+    # iaa.AdditiveGaussianNoise(loc=0, scale=(0.0, 0.05*255), per_channel=0.5), # Add gaussian noise.
+    # iaa.Multiply((0.8, 1.2), per_channel=0.2), # Make some images brighter and some darker.
+    # iaa.Affine(translate_px={"x":-40}), # Augmenter to apply affine transformations to images.
     # iaa.AdditiveGaussianNoise(scale=0.1*255),
     # iaa.Scale({"height": 32, "width": 64})
-    # iaa.Scale({"height": 32, "width": "keep-aspect-ratio"})
-    # iaa.Scale((0.5, 1.0))
-    iaa.CropAndPad(percent=(-0.25, 0.25))
+    # iaa.Scale({"height": 128, "width": "keep-aspect-ratio"}),
+    # iaa.Scale((0.5, 0.6)),
+    # iaa.Scale({"height": (0.5, 0.75), "width": [64,128]}),
+    # iaa.CropAndPad(percent=(-0.25, 0.25)),
+    iaa.Sometimes(0.5,
+        iaa.Scale({"height": 128, "width": "keep-aspect-ratio"}),
+    ),
 ])
 
 pil_img =Image.open('apple/apple_86.jpg')
