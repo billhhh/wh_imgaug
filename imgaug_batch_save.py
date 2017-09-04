@@ -51,13 +51,14 @@ for filename in os.listdir(src_dir):
 
 lst = class_names
 imgs = []
+imgpath = []
 for ind in range(0,len(lst)):
     sblst=os.listdir(os.path.join(src_dir,lst[ind]))
     # shuffle(sblst)
     print(len(sblst))
-    cnt=0
     for pic_name in sblst:
         filepath_src= src_dir + '/' + lst[ind] + '/' + pic_name
+        imgpath.append(src_dir + '/' + lst[ind] + '/'+ 'aug'+pic_name)
         if pic_name.endswith('.db') == True:
             continue
         else:
@@ -68,10 +69,9 @@ for ind in range(0,len(lst)):
             # range 0-255.
             img = plt.imread(filepath_src)
             imgs.append(img)
-            cnt += 1
 
 images_aug = seq.augment_images(imgs)
 
 for i in range(0,len(imgs)):
     # plt.imshow(images_aug[i])
-    plt.imsave(images_aug[i])
+    plt.imsave(imgpath[i],images_aug[i])

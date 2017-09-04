@@ -55,7 +55,6 @@ for ind in range(0,len(lst)):
     sblst=os.listdir(os.path.join(src_dir,lst[ind]))
     # shuffle(sblst)
     print(len(sblst))
-    cnt=0
     for pic_name in sblst:
         filepath_src= src_dir + '/' + lst[ind] + '/' + pic_name
         if pic_name.endswith('.db') == True:
@@ -68,7 +67,6 @@ for ind in range(0,len(lst)):
             # range 0-255.
             img = plt.imread(filepath_src)
             imgs.append(img)
-            cnt += 1
 
 images_aug = seq.augment_images(imgs)
 
