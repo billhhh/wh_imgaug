@@ -11,6 +11,6 @@ seq = iaa.Sequential([
 pil_img =Image.open('apple/apple_86.jpg')
 pil_img.show()
 img = array(pil_img)
-images_aug = seq.augment_images(img)
+images_aug = seq.augment_image(img)
 pil_im2 = Image.fromarray(uint8(images_aug))
 pil_im2.show()
