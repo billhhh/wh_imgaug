@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mb_pysol.iml" filepath="$PROJECT_DIR$/.idea/mb_pysol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wh_imgaug.iml" filepath="$PROJECT_DIR$/.idea/wh_imgaug.iml" />
     </modules>
   </component>
 </project>
