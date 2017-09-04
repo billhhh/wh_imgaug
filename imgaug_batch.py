@@ -1,6 +1,13 @@
 from imgaug import augmenters as iaa
 from PIL import Image
 from numpy import *
+import os
+import os.path
+from shutil import copyfile
+from math import floor
+from random import shuffle
+
+src_dir = './newFood_724_clean'
 
 seq = iaa.Sequential([
     # iaa.Crop(px=(0, 16)), # crop images from each side by 0 to 16px (randomly chosen)
