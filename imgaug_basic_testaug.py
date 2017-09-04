@@ -24,11 +24,18 @@ seq = iaa.Sequential([
     ),
 ])
 
-# pil_img =Image.open('apple/apple_86.jpg')
-# pil_img.show()
-# img = array(pil_img)
-img = plt.imread('newFood_724_clean/apple/apple_86.jpg')
-images_aug = seq.augment_image(img)
-pil_im2 = Image.fromarray(uint8(images_aug))
-# pil_im2 = Image.fromarray(images_aug)
-pil_im2.show()
+try:
+    # pil_img =Image.open('newFood_724_clean/apple/apple_86.jpg')
+    # pil_img.show()
+    # img = array(pil_img)
+    # plt.imshow('D:/dataset/newFood_724_clean/images/beef_ball_kway_teow_soup/beef_ball_kway_teow_soup115.jpg')
+    img = plt.imread('D:/dataset/newFood_724_clean/images/beef_ball_kway_teow_soup/beef_ball_kway_teow_soup115.jpg')
+    images_aug = seq.augment_image(img)
+    pil_im2 = Image.fromarray(uint8(images_aug))
+    # pil_im2 = Image.fromarray(images_aug)
+    pil_im2.show()
+
+except(IOError ,ZeroDivisionError),e:
+    print e
+
+print "done!"
