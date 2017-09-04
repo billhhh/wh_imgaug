@@ -55,6 +55,7 @@ imgpath = []
 for ind in range(0,len(lst)):
     sblst=os.listdir(os.path.join(src_dir,lst[ind]))
     # shuffle(sblst)
+    print("processing "+lst[ind]+"...")
     print(len(sblst))
 
     # skip the dir already big enough
