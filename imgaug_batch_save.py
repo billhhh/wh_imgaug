@@ -53,21 +53,20 @@ lst = class_names
 imgs = []
 imgpath = []
 
-try:
-    for ind in range(0,len(lst)):
-        sblst=os.listdir(os.path.join(src_dir,lst[ind]))
-        # shuffle(sblst)
-        print("processing "+lst[ind]+"...")
-        print(len(sblst))
+for ind in range(0,len(lst)):
+    sblst=os.listdir(os.path.join(src_dir,lst[ind]))
+    # shuffle(sblst)
+    print("processing "+lst[ind]+"...")
+    print(len(sblst))
 
-        # skip the dir already big enough
-        if len(sblst)>1000:
-            print "continue!"
-            continue
+    # skip the dir already big enough
+    if len(sblst)>1000:
+        print "continue!"
+        continue
 
-        for pic_name in sblst:
+    for pic_name in sblst:
+        try:
             filepath_src= src_dir + '/' + lst[ind] + '/' + pic_name
-            imgpath.append(src_dir + '/' + lst[ind] + '/'+ 'aug'+pic_name)
             if pic_name.endswith('.db') == True:
                 continue
             else:
@@ -78,14 +77,15 @@ try:
                 # range 0-255.
                 img = plt.imread(filepath_src)
                 imgs.append(img)
+                imgpath.append(src_dir + '/' + lst[ind] + '/' + 'aug' + pic_name)
+        except(IOError, ZeroDivisionError), e:
+            print e
+            continue
 
-    images_aug = seq.augment_images(imgs)
+images_aug = seq.augment_images(imgs)
 
-    for i in range(0,len(imgs)):
-        # plt.imshow(images_aug[i])
-        plt.imsave(imgpath[i],images_aug[i])
-
-except(IOError ,ZeroDivisionError),e:
-    print e
+for i in range(0,len(imgs)):
+    # plt.imshow(images_aug[i])
+    plt.imsave(imgpath[i],images_aug[i])
 
 print "done!"
