@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026f65e2-f87c-47a4-9103-b4535303cef3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/aug820749407373755479_263362048.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_80.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_81.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_82.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_83.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_84.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_85.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_86.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_87.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/apple/augapple_88.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug126373488579426538_12899973.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug153771722701524401_6812034.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug174551453_902705.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug219035782966244844_2179956.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug226526854668180314_756365.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug228499403873075775_73983.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug228578955056387514_6059356.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug231024932_1775927.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug231351337845457159_6991471.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/banana/aug320131861_1189047.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug125815986_1213438.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug138273488_1447873.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug211113881158746948_3711983.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug225678526755219131_14277920.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug230644523047623969_47342.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug239447620389739537_47342.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug244047325320445439_49696790.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug245918095265991083_44272785.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug247431304065698342_2327417.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newFood_724_clean/cherries/aug29862263_2110335.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgaug_save_mem_thread.py" afterPath="$PROJECT_DIR$/imgaug_save_mem_thread.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,6 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wh_imgaug$wh_imgaug.coverage" NAME="wh_imgaug Coverage Results" MODIFIED="1504497375370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_save_mem_thread.coverage" NAME="imgaug_save_mem_thread Coverage Results" MODIFIED="1504580762435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_basic2.coverage" NAME="imgaug_basic2 Coverage Results" MODIFIED="1504501065885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wh_imgaug$imgaug_save_mem.coverage" NAME="imgaug_save_mem Coverage Results" MODIFIED="1504576886260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wh_imgaug$split_train_val.coverage" NAME="split_train_val Coverage Results" MODIFIED="1504514552424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -55,8 +27,8 @@
       <file leaf-file-name="imgaug_save_mem_thread.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imgaug_save_mem_thread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="105" column="27" lean-forward="true" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
+            <state relative-caret-position="125">
+              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding>
                 <element signature="e#11#47#0" expanded="true" />
               </folding>
@@ -64,7 +36,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="threading.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Program_Files/Continuum/Anaconda2/Lib/threading.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="753" column="0" lean-forward="false" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mem</find>
+      <find>o</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,7 +129,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.imgaug_save_mem">
+  <component name="RunManager" selected="Python.imgaug_save_mem_thread">
     <configuration name="imgaug_basic_testaug" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -214,7 +202,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="split_train_val" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="imgaug_save_mem_thread" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -227,7 +215,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="wh_imgaug" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/split_train_val.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imgaug_save_mem_thread.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,17 +223,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.imgaug_basic_testaug" />
       <item index="1" class="java.lang.String" itemvalue="Python.imgaug_batch" />
-      <item index="2" class="java.lang.String" itemvalue="Python.split_train_val" />
-      <item index="3" class="java.lang.String" itemvalue="Python.imgaug_batch_save" />
-      <item index="4" class="java.lang.String" itemvalue="Python.imgaug_save_mem" />
+      <item index="2" class="java.lang.String" itemvalue="Python.imgaug_batch_save" />
+      <item index="3" class="java.lang.String" itemvalue="Python.imgaug_save_mem" />
+      <item index="4" class="java.lang.String" itemvalue="Python.imgaug_save_mem_thread" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.imgaug_save_mem" />
-        <item index="1" class="java.lang.String" itemvalue="Python.imgaug_basic_testaug" />
-        <item index="2" class="java.lang.String" itemvalue="Python.imgaug_batch_save" />
-        <item index="3" class="java.lang.String" itemvalue="Python.imgaug_batch" />
-        <item index="4" class="java.lang.String" itemvalue="Python.split_train_val" />
+        <item index="0" class="java.lang.String" itemvalue="Python.imgaug_save_mem_thread" />
+        <item index="1" class="java.lang.String" itemvalue="Python.imgaug_save_mem" />
+        <item index="2" class="java.lang.String" itemvalue="Python.imgaug_basic_testaug" />
+        <item index="3" class="java.lang.String" itemvalue="Python.imgaug_batch_save" />
+        <item index="4" class="java.lang.String" itemvalue="Python.imgaug_batch" />
       </list>
     </recent_temporary>
   </component>
@@ -265,17 +253,17 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17421874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17421874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21771772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31726283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25816485" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -300,13 +288,8 @@
           <line>33</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/imgaug_save_mem_thread.py</url>
-          <line>104</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -469,10 +452,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Program_Files/Continuum/Anaconda2/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="753" column="0" lean-forward="false" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imgaug_save_mem_thread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="105" column="27" lean-forward="true" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
+        <state relative-caret-position="125">
+          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding>
             <element signature="e#11#47#0" expanded="true" />
           </folding>

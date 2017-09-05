@@ -37,10 +37,17 @@ def thread_work(sblst_sub):
             continue
 
     images_aug = seq.augment_images(imgs)
+    # print("len(imgs) == "+str(len(imgs)))
 
     for i in range(0, len(imgs)):
-        plt.imshow(images_aug[i])
-        # plt.imsave(imgpath[i], images_aug[i])
+        try:
+            # plt.imshow(images_aug[i])
+            plt.imsave(imgpath[i], images_aug[i])
+        except(ValueError),e:
+            print e
+            continue
+        else:
+            continue
 
 seq = iaa.Sequential([
     iaa.Sometimes(0.5,
@@ -83,7 +90,7 @@ for filename in os.listdir(src_dir):
         class_names.append(filename)
 
 lst = class_names
-thread_num = 8;
+thread_num = 4;
 for ind in range(0,len(lst)):
     sblst=os.listdir(os.path.join(src_dir,lst[ind]))
     # shuffle(sblst)
@@ -96,13 +103,21 @@ for ind in range(0,len(lst)):
         continue
 
     threads_pool = []
+
     for i in range(thread_num-1):
         # multi thread here
-        t = threading.Thread(target=thread_work, args=(sblst[i*thread_num:(i+1)*thread_num],))
+        batch_size = len(sblst)/thread_num
+        t = threading.Thread(target=thread_work, args=(sblst[i*batch_size:(i+1)*batch_size],))
         threads_pool.append(t);
+        t.start()
 
     # specially process the last thread
-    t = threading.Thread(target=thread_work, args=(sblst[i*thread_num:]))
-    threads_pool.append(t);
+    t = threading.Thread(target=thread_work, args=(sblst[(i+1)*batch_size:],))
+    threads_pool.append(t)
+    t.start()
+
+    # join the threads
+    for i in range(0,len(threads_pool)):
+        threads_pool[i].join()
 
 print "done!"
