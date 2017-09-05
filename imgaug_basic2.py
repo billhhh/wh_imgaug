@@ -32,7 +32,7 @@ seq = iaa.Sequential([
     )
 ], random_order=True) # apply augmenters in random order
 
-pil_img =Image.open('apple/apple_80.jpg')
+pil_img =Image.open('newFood_724_clean/apple/apple_80.jpg')
 pil_img.show()
 img = array(pil_img)
 images_aug = seq.augment_image(img)
