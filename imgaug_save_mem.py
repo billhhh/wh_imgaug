@@ -57,8 +57,8 @@ for ind in range(0,len(lst)):
     print(len(sblst))
 
     # skip the dir already big enough
-    if len(sblst)>1000:
-        print "continue!"
+    if len(sblst)>750:
+        print "skip this food!"
         continue
 
     imgs = []
@@ -79,6 +79,9 @@ for ind in range(0,len(lst)):
                 imgpath.append(src_dir + '/' + lst[ind] + '/' + 'aug' + pic_name)
         except(IOError), e:
             print e
+            continue
+
+        else:
             continue
 
     images_aug = seq.augment_images(imgs)
