@@ -12,7 +12,7 @@ from random import shuffle
 import matplotlib.pylab as plt
 import time, threading
 
-src_dir = './newFood_724_clean'
+src_dir = './val'
 thread_num = 8
 
 seq = iaa.OneOf([
@@ -89,13 +89,7 @@ for ind in range(0,len(lst)):
     print("processing "+lst[ind]+"...")
     print(len(sblst))
 
-    # skip the dir already big enough
-    if len(sblst)>750:
-        print "skip this food!"
-        continue
-
     threads_pool = []
-
     for i in range(thread_num-1):
         # multi thread here
         batch_size = len(sblst)/thread_num
