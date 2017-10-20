@@ -12,7 +12,7 @@ from random import shuffle
 import matplotlib.pylab as plt
 import time, threading
 
-src_dir = './val'
+src_dir = './train_percent10'
 thread_num = 8
 
 seq = iaa.OneOf([
@@ -50,9 +50,9 @@ def thread_work(sblst_sub):
                 # All images must have numpy's dtype uint8. Values are expected to be in
                 # range 0-255.
                 img = plt.imread(filepath_src)
-                for ten_times_cnt in range(0,10):
+                for ten_times_cnt in range(0,9):
 					imgs.append(img)
-                imgpath.append(src_dir + '/' + lst[ind] + '/' + 'aug' + pic_name)
+					imgpath.append(src_dir + '/' + lst[ind] + '/' + 'aug' + str(ten_times_cnt) + pic_name)
         except(IOError), e:
             print e
             continue
