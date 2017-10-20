@@ -12,7 +12,7 @@ from random import shuffle
 import matplotlib.pylab as plt
 import time, threading
 
-src_dir = './train_percent10'
+src_dir = './images'
 thread_num = 8
 
 seq = iaa.OneOf([
